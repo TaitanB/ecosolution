@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 // import Burger from "../Burger/Burger";
 import Logo from "../Logo/Logo";
-import { HambergerMenu } from "iconsax-react";
+import { ArrowDown, HambergerMenu } from "iconsax-react";
 
 import css from "./Header.module.css";
 
@@ -9,8 +9,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    console.log("useEffect");
-
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrolled(true);
@@ -33,6 +31,12 @@ const Header = () => {
         <div className={css.menu}>
           <HambergerMenu size="16" color="#173D33" />
         </div>
+        <button type="button" className={css.button}>
+          <p className={css.text_btn}>Get in touch</p>
+          <div className={css.dott}>
+            <ArrowDown size="10" color="#173D33" />
+          </div>
+        </button>
         {/* <Burger /> */}
       </div>
     </header>

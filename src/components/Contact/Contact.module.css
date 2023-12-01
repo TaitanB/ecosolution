@@ -88,3 +88,9 @@
 .address {
   margin-bottom: 24px;
 }
+
+.container:hover .icon,
+.container:focus .icon {
+  color: var(--secondary-color);
+  transition: color 0.4s ease;
+}

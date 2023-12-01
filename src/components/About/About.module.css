@@ -39,9 +39,22 @@
 .values_list {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 197px;
   margin-bottom: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .values_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .values_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .item {
@@ -85,4 +98,71 @@
 .icon {
   width: 16px;
   color: var(--primary-color);
+}
+
+.item_img1,
+.item_img2 {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .item_img1 {
+    display: block;
+    background-image: url(../../assets/image/wind-farms-fields-tab-1x.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+
+  .item_img2 {
+    display: block;
+    background-image: url(../../assets/image//man-worker-firld-by-solar-panels-tab-1x.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .item_img1 {
+      background-image: url(../../assets/image/wind-farms-fields-tab-2x.png);
+    }
+
+    .item_img2 {
+      background-image: url(../../assets/image//man-worker-firld-by-solar-panels-tab-2x.png);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .item_img1 {
+    display: block;
+    background-image: url(../../assets/image/wind-farms-fields-1x.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+
+  .item_img2 {
+    display: block;
+    background-image: url(../../assets/image//man-worker-firld-by-solar-panels-1x.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .item_img1 {
+      background-image: url(../../assets/image/wind-farms-fields-2x.png);
+    }
+
+    .item_img2 {
+      background-image: url(../../assets/image//man-worker-firld-by-solar-panels-2x.png);
+    }
+  }
 }

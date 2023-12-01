@@ -21,8 +21,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s ease;
+}
+
+.menu:hover,
+.menu:focus {
+  background-color: var(--secondary-color);
+  transition: background-color 0.4s ease;
 }
 
 .scrolled {
   background-color: var(--white-color);
+}
+
+.button {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: inline-flex;
+    gap: 12px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    border-radius: 500px;
+    background-color: var(--secondary-color);
+    transition: background-color 0.4s ease;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
+  }
+
+  .text_btn {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.538px;
+    color: var(--primary-color);
+    font-family: "Fira Sans";
+
+    transition: color 0.4s ease;
+  }
+
+  .button:hover .text_btn,
+  .button:focus .text_btn {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .dott {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
+  }
+
+  .button:hover .dott,
+  .button:focus .dott {
+    background-color: var(--secondary-color);
+    transition: background-color 0.4s ease;
+  }
 }

@@ -13,7 +13,7 @@ const CasesSlide = (slide) => {
       <div className={css.content}>
         <div className={css.content_container}>
           <p className={css.text}>{slide.slide.location}</p>
-          <div className={css.arrow_contain}>
+          <div className={css.arrow_container}>
             <ArrowRight
               size="28px"
               transform="rotate(-45)"
@@ -21,9 +21,9 @@ const CasesSlide = (slide) => {
             />
           </div>
         </div>
-        <div className={css.bottom_text}>
-          {slide.slide.description} <div>{slide.slide.date}</div>
-        </div>
+        <p className={css.bottom_text}>
+          {slide.slide.description} <span>{slide.slide.date}</span>
+        </p>
       </div>
     </div>
   );
