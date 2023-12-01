@@ -1,0 +1,45 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+}
+
+/* mobile */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 768px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 1440px;
+  }
+}

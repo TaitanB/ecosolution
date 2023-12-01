@@ -1,0 +1,125 @@
+@import-normalize;
+
+:root {
+  --primary-bg-color: #f3f5fa;
+  --secondary-bg-color: #eaedf1;
+  --dark-color: #292d32;
+  --white-color: #ffffff;
+  --primary-color: #173d33;
+  --secondary-color: #97d28b;
+  --menu-color: #dcefd8;
+  --error-color: #d28b8b;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("./fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("./fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "FiraSans-Light";
+  src: url("./fonts/FiraSans-Light.ttf");
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.swiper {
+  margin-bottom: 36px;
+}
+
+.swiper-slide {
+  padding-top: 92px;
+}
+
+.swiper-pagination-total,
+.swiper-pagination-horizontal {
+  color: rgba(23, 61, 51, 0.25);
+  font-family: "FiraSans-Light";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.swiper-pagination-fraction {
+  top: 50px;
+  display: flex;
+  bottom: 100%;
+}
+
+.swiper-pagination-current {
+  color: var(--primary-color);
+  text-align: justify;
+  font-family: "FiraSans-Light";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1.12px;
+  margin-right: 8px;
+}
