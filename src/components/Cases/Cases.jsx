@@ -19,7 +19,47 @@ import slide4_2x from "/src/assets/image/slide4-2x.png";
 import slide5_1x from "/src/assets/image/slide5-1x.png";
 import slide5_2x from "/src/assets/image/slide5-2x.png";
 
+import CasesSlide from "../CasesSlide/CasesSlide";
+
 const Cases = () => {
+  const slidesData = [
+    {
+      image: slide1_1x,
+      image2x: slide1_2x,
+      location: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
+      description: "Wind Power for auto field irrigation",
+      date: "July 2023",
+    },
+    {
+      image: slide2_1x,
+      image2x: slide2_2x,
+      location: "Zhytomyr city Private Enterprise “Bosch”",
+      description: "Solar Panels for industrial use",
+      date: "November 2023",
+    },
+    {
+      image: slide3_1x,
+      image2x: slide3_2x,
+      location: "Rivne city Private Enterprise “Biotech”",
+      description: "Thermal modules",
+      date: "October 2023",
+    },
+    {
+      image: slide4_1x,
+      image2x: slide4_2x,
+      location: "Kherson city Private Enterprise “HealthyFarm”",
+      description: "Wind power",
+      date: "September 2021",
+    },
+    {
+      image: slide5_1x,
+      image2x: slide5_2x,
+      location: "Zaporizhia city Private Enterprise “Biotech”",
+      description: "Mini nuclear stations",
+      date: "May 2021",
+    },
+  ];
+
   const pagination = {
     type: "fraction",
     formatFractionCurrent(num) {
@@ -70,141 +110,11 @@ const Cases = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className={css.swiper}
       >
-        <SwiperSlide>
-          <div className={css.item}>
-            <img
-              className={css.img}
-              srcSet={`${slide1_1x} 1x, ${slide1_2x} 2x}`}
-              src={slide1_1x}
-              alt="Wind Power for auto field irrigation"
-            />
-            <div className={css.content}>
-              <div className={css.content_container}>
-                <p className={css.text}>
-                  Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
-                </p>
-                <div className={css.arrow_contain}>
-                  <ArrowRight
-                    size="28px"
-                    transform="rotate(-45)"
-                    className={css.arrow}
-                  />
-                </div>
-              </div>
-              <div className={css.bottom_text}>
-                Wind Power for auto field irrigation <div>July 2023</div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={css.item}>
-            <img
-              className={css.img}
-              srcSet={`${slide2_1x} 1x, ${slide2_2x} 2x}`}
-              src={slide2_1x}
-              alt="Solar Panels for industrial use"
-            />
-            <div className={css.content}>
-              <div className={css.content_container}>
-                <p className={css.text}>
-                  Zhytomyr city Private Enterprise “Bosch”
-                </p>
-                <div className={css.arrow_contain}>
-                  <ArrowRight
-                    size="28px"
-                    transform="rotate(-45)"
-                    className={css.arrow}
-                  />
-                </div>
-              </div>
-              <div className={css.bottom_text}>
-                Solar Panels for industrial use <div>November 2023</div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={css.item}>
-            <img
-              className={css.img}
-              srcSet={`${slide3_1x} 1x, ${slide3_2x} 2x}`}
-              src={slide3_1x}
-              alt="Thermal modules"
-            />
-            <div className={css.content}>
-              <div className={css.content_container}>
-                <p className={css.text}>
-                  Rivne city Private Enterprise “Biotech”
-                </p>
-                <div className={css.arrow_contain}>
-                  <ArrowRight
-                    size="28px"
-                    transform="rotate(-45)"
-                    className={css.arrow}
-                  />
-                </div>
-              </div>
-              <div className={css.bottom_text}>
-                Thermal modules <div>October 2023</div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={css.item}>
-            <img
-              className={css.img}
-              srcSet={`${slide4_1x} 1x, ${slide4_2x} 2x}`}
-              src={slide4_1x}
-              alt="Wind power"
-            />
-            <div className={css.content}>
-              <div className={css.content_container}>
-                <p className={css.text}>
-                  Kherson city Private Enterprise “HealthyFarm”
-                </p>
-                <div className={css.arrow_contain}>
-                  <ArrowRight
-                    size="28px"
-                    transform="rotate(-45)"
-                    className={css.arrow}
-                  />
-                </div>
-              </div>
-              <div className={css.bottom_text}>
-                Wind power <div>September 2021</div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={css.item}>
-            <img
-              className={css.img}
-              srcSet={`${slide5_1x} 1x, ${slide5_2x} 2x}`}
-              src={slide5_1x}
-              alt="Mini nuclear stations"
-            />
-            <div className={css.content}>
-              <div className={css.content_container}>
-                <p className={css.text}>
-                  Zaporizhia city Private Enterprise “Biotech”
-                </p>
-                <div className={css.arrow_contain}>
-                  <ArrowRight
-                    size="28px"
-                    transform="rotate(-45)"
-                    className={css.arrow}
-                  />
-                </div>
-              </div>
-              <div className={css.bottom_text}>
-                Mini nuclear stations <div>May 2021</div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+        {slidesData.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <CasesSlide slide={slide} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

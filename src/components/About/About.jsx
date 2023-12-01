@@ -20,7 +20,7 @@ const About = () => {
       </a>
       <img
         className={css.img}
-        srcSet={`${about_mob_1x} 1x, ${about_mob_2x} 2x}`}
+        srcSet={`${about_mob_1x} 1x, ${about_mob_2x} 2x`}
         src={about_mob_1x}
         alt="Renewable energy"
       />
