@@ -151,12 +151,12 @@ const Faq = () => {
       <p className={css.bottom_text}>
         Didn&apos;t find the answer to your question?{" "}
       </p>
-      <button type="button" className={css.button}>
+      <a href="#contacts" type="button" className={css.button}>
         <p className={css.text_btn}>Contact Us</p>
         <div className={css.dott}>
           <ArrowDown size="10" color="#173D33" />
         </div>
-      </button>
+      </a>
     </div>
   );
 };

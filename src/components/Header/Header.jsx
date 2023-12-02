@@ -31,12 +31,12 @@ const Header = () => {
         <div className={css.menu}>
           <HambergerMenu size="16" color="#173D33" />
         </div>
-        <button type="button" className={css.button}>
+        <a href="#contacts" type="button" className={css.button}>
           <p className={css.text_btn}>Get in touch</p>
           <div className={css.dott}>
             <ArrowDown size="10" color="#173D33" />
           </div>
-        </button>
+        </a>
         {/* <Burger /> */}
       </div>
     </header>

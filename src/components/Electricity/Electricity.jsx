@@ -2,18 +2,11 @@ import { useState, useEffect } from "react";
 import css from "./Electricity.module.css";
 
 const Electricity = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1134147814);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCount((prevCount) => {
-        if (prevCount < 1134147814) {
-          return prevCount + 1;
-        } else {
-          clearInterval(intervalId);
-          return prevCount;
-        }
-      });
+      setCount((prevCount) => prevCount + 1);
     }, 1000);
 
     return () => clearInterval(intervalId);

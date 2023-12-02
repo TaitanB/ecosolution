@@ -3,17 +3,17 @@ import Arrow from "../Arrow/Arrow";
 
 const Main = () => {
   return (
-    <div className={css.main}>
+    <div id="main" className={css.main}>
       <h1 className={css.title}>Renewable energy for any task</h1>
       <p className={css.text}>
         Development and implementation of renewable non-polluting energy
         sources, generating power generation using energy wind, sun, water,
         biomass
       </p>
-      <button type="button" className={css.button}>
+      <a href="#cases" type="button" className={css.button}>
         <p className={css.text_btn}>Learn more</p>
         <Arrow />
-      </button>
+      </a>
     </div>
   );
 };

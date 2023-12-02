@@ -7,9 +7,9 @@ const Footer = () => {
     <div className={css.footer}>
       <div className={css.logo}>
         <Logo />
-        <div className={css.arrow_container}>
+        <a href="#main" className={css.arrow_container}>
           <ArrowUp className={css.arrow} />
-        </div>
+        </a>
       </div>
       <ul className={css.soc_list}>
         <li className={css.soc}>

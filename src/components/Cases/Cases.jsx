@@ -71,7 +71,7 @@ const Cases = () => {
   };
 
   return (
-    <div>
+    <div id="cases">
       <h2 className={css.title}>Successful cases of our company</h2>
       <div className={css.slider_bar}>
         <div className={css.container}>
