@@ -1,6 +1,5 @@
 import css from "./CasesSlide.module.css";
 import { ArrowRight } from "iconsax-react";
-import HandleBlur from "../../utils/HandleBlur";
 
 const CasesSlide = (slide) => {
   return (
@@ -14,7 +13,7 @@ const CasesSlide = (slide) => {
       <div className={css.content}>
         <div className={css.content_container}>
           <p className={css.text}>{slide.slide.location}</p>
-          <div className={css.arrow_container} onClick={HandleBlur}>
+          <div className={css.arrow_container}>
             <ArrowRight
               size="28px"
               transform="rotate(-45)"

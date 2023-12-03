@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Burger from "../Burger/Burger";
 import Logo from "../Logo/Logo";
 import { ArrowDown, HambergerMenu } from "iconsax-react";
-import HandleBlur from "../../utils/HandleBlur";
+
 import css from "./Header.module.css";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
   }, [scrolled]);
 
   const handleOpenMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(true);
 
     document.body.classList.add("hidden");
   };
@@ -46,7 +46,7 @@ const Header = () => {
             <div className={css.menu} onClick={handleOpenMenu}>
               <HambergerMenu size="16" color="#173D33" />
             </div>
-            <a href="#contacts" onClick={HandleBlur} className={css.button}>
+            <a href="#contacts" className={css.button}>
               <p className={css.text_btn}>Get in touch</p>
               <ArrowDown className={css.dott} size="10" color="#173D33" />
             </a>
