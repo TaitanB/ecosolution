@@ -11,6 +11,15 @@ const Burger = ({ isOpen, onCloseMenu }) => {
     const handleHashChange = () => {
       const hash = window.location.hash;
       setActiveLink(hash);
+
+      const targetElement = document.querySelector(hash);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 148,
+          behavior: "smooth",
+        });
+      }
     };
 
     const handleKeyPress = (e) => {
