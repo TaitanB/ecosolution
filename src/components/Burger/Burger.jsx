@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import css from "./Burger.module.css";
 import { ArrowRight, Instagram } from "iconsax-react";
 import PropTypes from "prop-types";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Burger = ({ isOpen, onCloseMenu }) => {
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("#main");
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -112,7 +113,7 @@ const Burger = ({ isOpen, onCloseMenu }) => {
           </ul>
         </nav>
         <ul className={css.soc_list}>
-          <li className={css.soc}>
+          <li className={css.soc} onClick={HandleBlur}>
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -145,7 +146,7 @@ const Burger = ({ isOpen, onCloseMenu }) => {
               </svg>
             </a>
           </li>
-          <li className={css.soc}>
+          <li className={css.soc} onClick={HandleBlur}>
             <a
               href="https://www.instagram.com/"
               target="_blank"

@@ -1,6 +1,7 @@
 import css from "./Contact.module.css";
 import { Call, Sms, Map1, Instagram } from "iconsax-react";
 import Form from "../Form/Form";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
             <li className={css.item}>
               <p className={css.subtitle}>Phone:</p>
               <ul>
-                <li className={css.container}>
+                <li className={css.container} onClick={HandleBlur}>
                   <Call className={css.icon} />
                   <a
                     href="tel:+380981234567"
@@ -23,7 +24,7 @@ const Contact = () => {
                     38 (098) 12 34 567
                   </a>
                 </li>
-                <li className={css.container}>
+                <li className={css.container} onClick={HandleBlur}>
                   <Call className={css.icon} />
                   <a
                     href="tel:+380931234567"
@@ -38,7 +39,7 @@ const Contact = () => {
             </li>
             <li className={css.item}>
               <p className={css.subtitle}>E-mail:</p>
-              <div className={css.container}>
+              <div className={css.container} onClick={HandleBlur}>
                 <Sms className={css.icon} />
                 <a
                   href="mailto:office@ecosolution.com"
@@ -52,7 +53,7 @@ const Contact = () => {
             </li>
             <li className={css.item}>
               <p className={css.subtitle}>Address:</p>
-              <div className={css.container}>
+              <div className={css.container} onClick={HandleBlur}>
                 <Map1 className={css.icon} />
                 <span className={css.link}>
                   79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
@@ -62,7 +63,7 @@ const Contact = () => {
             <li className={css.item}>
               <p className={css.subtitle}>Social Networks:</p>
               <ul className={css.soc_list}>
-                <li className={css.soc}>
+                <li className={css.soc} onClick={HandleBlur}>
                   <a
                     href="https://www.facebook.com/"
                     target="_blank"
@@ -94,7 +95,7 @@ const Contact = () => {
                     </svg>
                   </a>
                 </li>
-                <li className={css.soc}>
+                <li className={css.soc} onClick={HandleBlur}>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"

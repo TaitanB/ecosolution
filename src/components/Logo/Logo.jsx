@@ -1,10 +1,10 @@
 import css from "./Logo.module.css";
-
+import HandleBlur from "../../utils/HandleBlur";
 import svg from "/src/assets/symbol-defs.svg";
 
 const Logo = () => {
   return (
-    <div className={css.logo}>
+    <div className={css.logo} onClick={HandleBlur}>
       <svg className={css.icon} width={31} height={18}>
         <use href={`${svg}#icon-icon`}></use>
       </svg>

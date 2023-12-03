@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import css from "./Form.module.css";
 import Arrow from "../Arrow/Arrow";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Form = () => {
   const formik = useFormik({
@@ -112,10 +113,8 @@ const Form = () => {
         <p className={css.after}></p>
       </div>
 
-      <button className={css.button} type="submit">
-        <p className={css.text_btn} onClick={document.activeElement.blur()}>
-          Send
-        </p>
+      <button className={css.button} type="submit" onClick={HandleBlur}>
+        <p className={css.text_btn}>Send</p>
         <Arrow />
       </button>
     </form>

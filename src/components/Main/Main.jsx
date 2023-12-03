@@ -1,5 +1,6 @@
 import css from "./Main.module.css";
 import Arrow from "../Arrow/Arrow";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Main = () => {
   return (
@@ -11,7 +12,7 @@ const Main = () => {
           sources, generating power generation using energy wind, sun, water,
           biomass
         </p>
-        <a href="#cases" type="button" className={css.button}>
+        <a href="#cases" onClick={HandleBlur} className={css.button}>
           <p className={css.text_btn}>Learn more</p>
           <Arrow />
         </a>
