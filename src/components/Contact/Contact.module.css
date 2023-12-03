@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .title {
@@ -78,7 +78,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: -36px;
   display: block;
   width: 100%;
   height: 1px;
@@ -93,4 +93,72 @@
 .container:focus .icon {
   color: var(--secondary-color);
   transition: color 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .address {
+    margin: 0;
+    width: calc(100% / 2 - 12px);
+  }
+
+  .contact::after {
+    bottom: -100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+    margin-bottom: 120px;
+  }
+
+  .content {
+    display: flex;
+    gap: 48px;
+  }
+
+  .contact {
+    margin-bottom: 120px;
+  }
+
+  .contact::after {
+    bottom: -120px;
+  }
+
+  .contact_list {
+    gap: 32px;
+  }
+
+  .link {
+    width: auto;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
+
+  .soc {
+    padding: 0;
+  }
+
+  .address {
+    width: calc(100% / 2 - 24px);
+  }
 }

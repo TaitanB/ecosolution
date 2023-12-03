@@ -11,17 +11,20 @@ import about_2x from "/src/assets/image/about-2x.png";
 const About = () => {
   return (
     <div className={css.about}>
-      <p className={css.adress}>
-        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-      </p>
-      <a
-        href="mailto:office@ecosolution.com"
-        target="_blank"
-        rel="noreferrer noopener"
-        className={css.mail}
-      >
-        office@ecosolution.com
-      </a>
+      <div className={css.container}>
+        <p className={css.adress}>
+          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+        </p>
+        <a
+          href="mailto:office@ecosolution.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          className={css.mail}
+        >
+          office@ecosolution.com
+        </a>
+        <p className={css.copy}>ecosolution © 2023</p>
+      </div>
       <picture>
         <source
           media="(max-width: 767px)"
@@ -42,14 +45,17 @@ const About = () => {
           className={css.img}
         />
       </picture>
-      <h2 className={css.title}>Main values of our company</h2>
-      <p className={css.text}>
-        EcoSolution envisions a world where sustainable energy solutions power a
-        brighter and cleaner future for all. We aspire to be at the forefront of
-        the global shift towards renewable energy, leading the way in innovative
-        technologies that harness the power of nature to meet the world&apos;s
-        energy needs.
-      </p>
+      <div className={css.content}>
+        <h2 className={css.title}>Main values of our company</h2>
+        <p className={css.text}>
+          EcoSolution envisions a world where sustainable energy solutions power
+          a brighter and cleaner future for all. We aspire to be at the
+          forefront of the global shift towards renewable energy, leading the
+          way in innovative technologies that harness the power of nature to
+          meet the world&apos;s energy needs.
+        </p>
+      </div>
+
       <ul className={css.values_list}>
         <li className={css.item}>
           <div className={css.item_content}>

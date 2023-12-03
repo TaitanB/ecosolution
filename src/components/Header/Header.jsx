@@ -28,15 +28,16 @@ const Header = () => {
     <header className={`${css.header} ${scrolled ? css.scrolled : ""}`}>
       <div className={`${css.content} container`}>
         <Logo />
-        <div className={css.menu}>
-          <HambergerMenu size="16" color="#173D33" />
-        </div>
-        <a href="#contacts" type="button" className={css.button}>
-          <p className={css.text_btn}>Get in touch</p>
-          <div className={css.dott}>
-            <ArrowDown size="10" color="#173D33" />
+        <div className={css.btns}>
+          <div className={css.menu}>
+            <HambergerMenu size="16" color="#173D33" />
           </div>
-        </a>
+          <a href="#contacts" type="button" className={css.button}>
+            <p className={css.text_btn}>Get in touch</p>
+            <ArrowDown className={css.dott} size="10" color="#173D33" />
+          </a>
+        </div>
+
         {/* <Burger /> */}
       </div>
     </header>

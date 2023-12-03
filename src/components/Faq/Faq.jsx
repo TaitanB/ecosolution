@@ -12,17 +12,16 @@ const Faq = () => {
   return (
     <div className={css.faq}>
       <h2 className={css.title}>Frequently Asked Questions</h2>
-
       <ul className={css.list}>
         <li className={css.item} onClick={() => toggleSection(1)}>
           <h3 className={css.subtitle}>
             {activeItem === 1 ? (
               <span>
-                <Minus size="16" color="#173D33" />
+                <Minus className={css.minus} />
               </span>
             ) : (
               <span>
-                <Add size="16" color="#97D28B" />
+                <Add className={css.add} />
               </span>
             )}
             How do wind turbines and solar panels work together in a renewable
@@ -46,11 +45,11 @@ const Faq = () => {
           <h3 className={css.subtitle}>
             {activeItem === 2 ? (
               <span>
-                <Minus size="16" color="#173D33" />
+                <Minus className={css.minus} />
               </span>
             ) : (
               <span>
-                <Add size="16" color="#97D28B" />
+                <Add className={css.add} />
               </span>
             )}
             What sets EcoSolution&apos;s renewable energy solutions apart from
@@ -72,11 +71,11 @@ const Faq = () => {
           <h3 className={css.subtitle}>
             {activeItem === 3 ? (
               <span>
-                <Minus size="16" color="#173D33" />
+                <Minus className={css.minus} />
               </span>
             ) : (
               <span>
-                <Add size="16" color="#97D28B" />
+                <Add className={css.add} />
               </span>
             )}
             How can businesses and communities benefit from integrating
@@ -98,11 +97,11 @@ const Faq = () => {
           <h3 className={css.subtitle}>
             {activeItem === 4 ? (
               <span>
-                <Minus size="16" color="#173D33" />
+                <Minus className={css.minus} />
               </span>
             ) : (
               <span>
-                <Add size="16" color="#97D28B" />
+                <Add className={css.add} />
               </span>
             )}
             What measures does EcoSolution take to ensure the environmental
@@ -124,11 +123,11 @@ const Faq = () => {
           <h3 className={css.subtitle}>
             {activeItem === 5 ? (
               <span>
-                <Minus size="16" color="#173D33" />
+                <Minus className={css.minus} />
               </span>
             ) : (
               <span>
-                <Add size="16" color="#97D28B" />
+                <Add className={css.add} />
               </span>
             )}
             How does EcoSolution engage with local communities and support a
@@ -147,16 +146,17 @@ const Faq = () => {
           )}
         </li>
       </ul>
-
-      <p className={css.bottom_text}>
-        Didn&apos;t find the answer to your question?{" "}
-      </p>
-      <a href="#contacts" type="button" className={css.button}>
-        <p className={css.text_btn}>Contact Us</p>
-        <div className={css.dott}>
-          <ArrowDown size="10" color="#173D33" />
-        </div>
-      </a>
+      <div className={css.container}>
+        <p className={css.bottom_text}>
+          Didn&apos;t find the answer to your question?{" "}
+        </p>
+        <a href="#contacts" type="button" className={css.button}>
+          <p className={css.text_btn}>Contact Us</p>
+          <div className={css.dott}>
+            <ArrowDown size="10" color="#173D33" />
+          </div>
+        </a>
+      </div>
     </div>
   );
 };

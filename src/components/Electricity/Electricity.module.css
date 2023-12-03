@@ -1,6 +1,8 @@
 .electricity {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
 }
 
 .title {
@@ -11,7 +13,7 @@
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 72px;
+  margin-bottom: 96px;
   position: relative;
 }
 
@@ -30,7 +32,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  margin: 24px auto 36px;
+  margin: 0 auto;
 }
 
 .count {
@@ -49,4 +51,57 @@
   font-family: Oswald;
   font-size: 24px;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    width: 368px;
+    margin-bottom: 135px;
+  }
+
+  .title::after {
+    height: 87px;
+    bottom: -112px;
+  }
+
+  .count {
+    font-size: 100px;
+  }
+
+  .kWh {
+    font-size: 28px;
+  }
+
+  .counter {
+    gap: 24px;
+  }
+
+  .electricity {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .electricity {
+    margin-bottom: 120px;
+  }
+
+  .title {
+    font-size: 48px;
+    width: 491px;
+    margin-bottom: 120px;
+  }
+
+  .title::after {
+    bottom: -112px;
+  }
+
+  .count {
+    font-size: 164px;
+  }
+
+  .kWh {
+    font-size: 48px;
+  }
 }

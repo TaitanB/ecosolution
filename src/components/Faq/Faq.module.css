@@ -21,10 +21,11 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.72px;
-  padding: 16px 0;
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .text {
@@ -32,11 +33,15 @@
   font-size: 14px;
   letter-spacing: -0.56px;
   padding-left: 24px;
-  padding-bottom: 16px;
 }
 
 .item {
   position: relative;
+  padding-top: 16px;
+}
+
+.item:not(:last-child) .text {
+  padding-bottom: 16px;
 }
 
 .item::after {
@@ -50,21 +55,35 @@
   background-color: var(--secondary-color);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bottom_text {
   text-align: justify;
   font-size: 18px;
   letter-spacing: -0.72px;
-  padding-left: 11px;
   margin-bottom: 12px;
 }
 
 .list {
-  margin-bottom: 20px;
+  margin-bottom: 36px;
+}
+
+.minus {
+  width: 16px;
+  color: var(--primary-color);
+}
+
+.add {
+  width: 16px;
+  color: var(--secondary-color);
 }
 
 .button {
   display: inline-flex;
-  margin: 0 auto;
   gap: 12px;
   padding: 10px 16px;
   justify-content: center;
@@ -115,4 +134,92 @@
 .button:focus .dott {
   background-color: var(--secondary-color);
   transition: background-color 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 100px;
+  }
+
+  .title {
+    font-size: 36px;
+    grid-row: 1;
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+
+  .list {
+    grid-row: span 2;
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+
+  .container {
+    grid-row: 2;
+    grid-column: 2;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .faq {
+    gap: 48px;
+  }
+
+  .title {
+    width: 398px;
+    font-size: 48px;
+    margin: 0 auto;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+    line-height: normal;
+    padding-bottom: 24px;
+    gap: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    padding-left: 52px;
+  }
+
+  .item {
+    padding-top: 24px;
+  }
+
+  .item:not(:last-child) .text {
+    padding-bottom: 24px;
+  }
+
+  .minus {
+    width: 28px;
+  }
+
+  .add {
+    width: 28px;
+  }
+
+  .bottom_text {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  .button {
+    margin-left: 0px;
+  }
 }

@@ -13,22 +13,22 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("./fonts/Oswald-Regular.ttf");
+  src: url("./utils/fonts/Oswald-Regular.ttf");
 }
 
 @font-face {
   font-family: "Oswald-Bold";
-  src: url("./fonts/Oswald-Bold.ttf");
+  src: url("./utils/fonts/Oswald-Bold.ttf");
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url("./fonts/FiraSans-Regular.ttf");
+  src: url("./utils/fonts/FiraSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "FiraSans-Light";
-  src: url("./fonts/FiraSans-Light.ttf");
+  src: url("./utils/fonts/FiraSans-Light.ttf");
 }
 
 *,
@@ -100,14 +100,8 @@ button {
   clip: rect(0 0 0 0);
 }
 
-.swiper {
-  margin-bottom: 36px;
-}
-
 .swiper-slide {
   padding-top: 92px;
-  /* height: 410px; */
-  /* display: flex; */
 }
 
 .swiper-pagination-total,
@@ -137,4 +131,26 @@ button {
   line-height: normal;
   letter-spacing: -1.12px;
   margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-fraction {
+    top: 45px;
+    left: 51.5%;
+  }
+
+  .swiper-slide {
+    padding-top: 108px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .swiper-pagination-fraction {
+    top: 68px;
+    left: 63%;
+  }
+
+  .swiper-slide {
+    padding-top: 216px;
+  }
 }

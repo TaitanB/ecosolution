@@ -1,3 +1,7 @@
+.cases {
+  margin-bottom: 36px;
+}
+
 .title {
   width: 264px;
   font-family: Oswald;
@@ -20,7 +24,6 @@
   right: 0;
   top: 7px;
   gap: 12px;
-  margin-bottom: 7px;
 }
 
 .arrow {
@@ -50,4 +53,51 @@
 .arrow_container:focus {
   border-color: var(--secondary-color);
   transition: border-color 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .container {
+    top: 8px;
+  }
+
+  .cases {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  .title {
+    position: absolute;
+    font-size: 36px;
+    margin-bottom: 0;
+    top: 0;
+  }
+
+  .cases::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 5px;
+    height: 65px;
+    width: 1px;
+    background-color: var(--secondary-color);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    top: 30px;
+  }
+
+  .cases {
+    margin-bottom: 120px;
+  }
+
+  .title {
+    width: 398px;
+    font-size: 48px;
+  }
+
+  .cases::after {
+    height: 96px;
+  }
 }

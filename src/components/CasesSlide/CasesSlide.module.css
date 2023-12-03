@@ -74,3 +74,52 @@
   font-size: 12px;
   letter-spacing: -0.48px;
 }
+
+@media (min-width: 768px) {
+  .content_container {
+    min-height: 72px;
+    margin-bottom: 16px;
+  }
+
+  .content_container::after {
+    bottom: -15px;
+  }
+
+  .text {
+    text-align: left;
+    width: 230px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+
+  .bottom_text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content_container {
+    min-height: 58px;
+    margin-bottom: 36px;
+  }
+
+  .content_container::after {
+    bottom: -36px;
+  }
+
+  .content {
+    padding: 36px 48px;
+  }
+
+  .text {
+    text-align: left;
+    width: 357px;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  .bottom_text {
+    font-size: 16px;
+    padding-top: 24px;
+  }
+}

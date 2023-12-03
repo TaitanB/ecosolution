@@ -34,8 +34,13 @@
   background-color: var(--white-color);
 }
 
+.btns {
+  display: flex;
+}
+
 .button {
   display: none;
+  margin-left: 12px;
 }
 
 @media screen and (min-width: 768px) {

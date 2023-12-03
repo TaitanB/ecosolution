@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 24px;
+  padding: 24px 0;
   gap: 24px;
 }
 
@@ -35,6 +35,7 @@
 
 .mail {
   color: var(--primary-color);
+  letter-spacing: -0.64px;
 }
 
 .footer_content {
@@ -80,4 +81,52 @@
 .arrow_container:focus {
   background-color: var(--primary-color);
   transition: background-color 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    position: relative;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .soc_list {
+    grid-column: 2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .footer_content {
+    flex-direction: row;
+    grid-column: span 2;
+    gap: 0;
+  }
+
+  .mail {
+    margin: 0 50px 0 77px;
+  }
+
+  .arrow_container {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mail {
+    margin: 0 167px 0 auto;
+  }
+
+  .soc_list {
+    margin-left: auto;
+    margin-right: 403px;
+  }
 }

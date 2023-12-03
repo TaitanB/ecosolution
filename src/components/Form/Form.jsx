@@ -113,7 +113,9 @@ const Form = () => {
       </div>
 
       <button className={css.button} type="submit">
-        <p className={css.text_btn}>Send</p>
+        <p className={css.text_btn} onClick={document.activeElement.blur()}>
+          Send
+        </p>
         <Arrow />
       </button>
     </form>
