@@ -94,7 +94,6 @@
   transition: background-color 0.4s ease;
 }
 
-.button:hover,
 .button:focus {
   background-color: var(--primary-color);
   transition: background-color 0.4s ease;
@@ -111,7 +110,6 @@
   transition: color 0.4s ease;
 }
 
-.button:hover .text_btn,
 .button:focus .text_btn {
   color: var(--secondary-color);
   transition: color 0.4s ease;
@@ -154,5 +152,15 @@
 
   .item:last-of-type {
     margin-bottom: 15px;
+  }
+
+  .button:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
+  }
+
+  .button:hover .text_btn {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
   }
 }

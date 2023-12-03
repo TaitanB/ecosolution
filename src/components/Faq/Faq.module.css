@@ -95,7 +95,6 @@
   transition: background-color 0.4s ease;
 }
 
-.button:hover,
 .button:focus {
   background-color: var(--primary-color);
   transition: background-color 0.4s ease;
@@ -113,7 +112,6 @@
   transition: color 0.4s ease;
 }
 
-.button:hover .text_btn,
 .button:focus .text_btn {
   color: var(--secondary-color);
   transition: color 0.4s ease;
@@ -130,7 +128,6 @@
   transition: background-color 0.4s ease;
 }
 
-.button:hover .dott,
 .button:focus .dott {
   background-color: var(--secondary-color);
   transition: background-color 0.4s ease;
@@ -221,5 +218,20 @@
 
   .button {
     margin-left: 0px;
+  }
+
+  .button:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
+  }
+
+  .button:hover .text_btn {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .button:hover .dott {
+    background-color: var(--secondary-color);
+    transition: background-color 0.4s ease;
   }
 }

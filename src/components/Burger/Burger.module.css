@@ -95,23 +95,23 @@
   transition: color 0.4s ease;
 }
 
-.soc:hover .icon,
-.item:hover .arrow {
+.soc:focus .icon,
+.item:focus .arrow {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.item:hover {
+.item:focus {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.close_btn:hover {
+.close_btn:focus {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.close_btn:hover .close {
+.close_btn:focus .close {
   stroke: var(--secondary-color);
   transition: stroke 0.4s ease;
 }
@@ -144,6 +144,27 @@
   /* .item {
     color: rgba(151, 210, 139, 0.25);
   } */
+
+  .soc:hover .icon,
+  .item:hover .arrow {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .item:hover {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .close_btn:hover {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .close_btn:hover .close {
+    stroke: var(--secondary-color);
+    transition: stroke 0.4s ease;
+  }
 }
 
 .active {

@@ -1,18 +1,19 @@
 import css from "./Footer.module.css";
 import Logo from "../Logo/Logo";
 import { ArrowUp, Instagram } from "iconsax-react";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Footer = () => {
   return (
     <div className={css.footer}>
       <div className={css.logo}>
         <Logo />
-        <a href="#main" className={css.arrow_container}>
+        <a href="#main" className={css.arrow_container} onClick={HandleBlur}>
           <ArrowUp className={css.arrow} />
         </a>
       </div>
       <ul className={css.soc_list}>
-        <li className={css.soc}>
+        <li className={css.soc} onClick={HandleBlur}>
           <a
             href="https://www.facebook.com/"
             target="_blank"
@@ -44,7 +45,7 @@ const Footer = () => {
             </svg>
           </a>
         </li>
-        <li className={css.soc}>
+        <li className={css.soc} onClick={HandleBlur}>
           <a
             href="https://www.instagram.com/"
             target="_blank"

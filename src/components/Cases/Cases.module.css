@@ -43,13 +43,11 @@
   transition: border-color 0.4s ease;
 }
 
-.arrow_container:hover .arrow,
 .arrow_container:focus .arrow {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.arrow_container:hover,
 .arrow_container:focus {
   border-color: var(--secondary-color);
   transition: border-color 0.4s ease;
@@ -100,4 +98,14 @@
   .cases::after {
     height: 96px;
   }
+
+  .arrow_container:hover .arrow {
+  color: var(--secondary-color);
+  transition: color 0.4s ease;
+}
+
+.arrow_container:hover {
+  border-color: var(--secondary-color);
+  transition: border-color 0.4s ease;
+}
 }

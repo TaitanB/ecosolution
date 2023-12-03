@@ -53,7 +53,7 @@
   transition: color 0.4s ease;
 }
 
-.soc:hover .icon {
+.soc:focus .icon {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
@@ -89,7 +89,6 @@
   margin-bottom: 24px;
 }
 
-.container:hover .icon,
 .container:focus .icon {
   color: var(--secondary-color);
   transition: color 0.4s ease;
@@ -160,5 +159,15 @@
 
   .address {
     width: calc(100% / 2 - 24px);
+  }
+
+  .soc:hover .icon {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .container:hover .icon {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
   }
 }

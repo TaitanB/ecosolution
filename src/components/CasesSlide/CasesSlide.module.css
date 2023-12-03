@@ -54,13 +54,11 @@
   transition: background-color 0.4s ease;
 }
 
-.item:hover .arrow,
 .item:focus .arrow {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.item:hover .arrow_container,
 .item:focus .arrow_container {
   background-color: var(--primary-color);
   transition: background-color 0.4s ease;
@@ -121,5 +119,15 @@
   .bottom_text {
     font-size: 16px;
     padding-top: 24px;
+  }
+
+  .item:hover .arrow {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .item:hover .arrow_container {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
   }
 }

@@ -1,9 +1,10 @@
 import css from "./CasesSlide.module.css";
 import { ArrowRight } from "iconsax-react";
+import HandleBlur from "../../utils/HandleBlur";
 
 const CasesSlide = (slide) => {
   return (
-    <div className={css.item}>
+    <div className={css.item} onClick={HandleBlur}>
       <img
         className={css.img}
         srcSet={`${slide.slide.image} 1x, ${slide.slide.image2x} 2x`}

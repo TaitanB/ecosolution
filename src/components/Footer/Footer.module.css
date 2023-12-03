@@ -60,7 +60,7 @@
   transition: color 0.4s ease;
 }
 
-.soc:hover .icon {
+.soc:focus .icon {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
@@ -71,13 +71,11 @@
   gap: 8px;
 }
 
-.arrow_container:hover .arrow,
 .arrow_container:focus .arrow {
   color: var(--secondary-color);
   transition: color 0.4s ease;
 }
 
-.arrow_container:hover,
 .arrow_container:focus {
   background-color: var(--primary-color);
   transition: background-color 0.4s ease;
@@ -128,5 +126,20 @@
   .soc_list {
     margin-left: auto;
     margin-right: 403px;
+  }
+
+  .soc:hover .icon {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .arrow_container:hover .arrow {
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+  }
+
+  .arrow_container:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
   }
 }

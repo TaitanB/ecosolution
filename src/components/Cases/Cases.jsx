@@ -20,6 +20,7 @@ import slide5_1x from "/src/assets/image/slide5-1x.png";
 import slide5_2x from "/src/assets/image/slide5-2x.png";
 
 import CasesSlide from "../CasesSlide/CasesSlide";
+import HandleBlur from "../../utils/HandleBlur";
 
 const Cases = () => {
   const slidesData = [
@@ -77,11 +78,13 @@ const Cases = () => {
         <div className={css.container}>
           <div
             className={`prev-btn ${css.arrow_container}`}
+            onClick={HandleBlur}
           >
             <ArrowLeft size="36px" className={css.arrow} />
           </div>
           <div
             className={`next-btn ${css.arrow_container}`}
+            onClick={HandleBlur}
           >
             <ArrowRight size="36px" className={css.arrow} />
           </div>
