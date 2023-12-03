@@ -10,7 +10,7 @@ const Faq = () => {
   };
 
   return (
-    <div className={css.faq}>
+    <div id="faq" className={css.faq}>
       <h2 className={css.title}>Frequently Asked Questions</h2>
       <ul className={css.list}>
         <li className={css.item} onClick={() => toggleSection(1)}>

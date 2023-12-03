@@ -10,7 +10,7 @@ import about_2x from "/src/assets/image/about-2x.png";
 
 const About = () => {
   return (
-    <div className={css.about}>
+    <div id="about" className={css.about}>
       <div className={css.container}>
         <p className={css.adress}>
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
@@ -55,7 +55,6 @@ const About = () => {
           meet the world&apos;s energy needs.
         </p>
       </div>
-
       <ul className={css.values_list}>
         <li className={css.item}>
           <div className={css.item_content}>
