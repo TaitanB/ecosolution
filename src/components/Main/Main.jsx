@@ -11,7 +11,13 @@ const Main = () => {
           sources, generating power generation using energy wind, sun, water,
           biomass
         </p>
-        <a href="#cases" className={css.button}>
+        <a
+          href="#cases"
+          className={css.button}
+          onClick={(event) => {
+            event.currentTarget.blur();
+          }}
+        >
           <p className={css.text_btn}>Learn more</p>
           <Arrow />
         </a>
