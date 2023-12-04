@@ -58,13 +58,13 @@ const Faq = () => {
           </h3>
           {activeItem === 2 && (
             <div className={css.text}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Explicabo deleniti laborum dolorum voluptates earum cum labore
-              maxime repellat dolores, accusantium obcaecati, possimus nobis
-              exercitationem fugit veniam quos. Iste, pariatur est! Dicta
-              itaque, repudiandae voluptates reprehenderit sed consectetur
-              assumenda quisquam possimus aspernatur ipsam. Inventore impedit
-              facilis at similique nisi magnam. Cupiditate!
+              Our renewable energy solutions stand out through a comprehensive
+              approach covering solar, wind, and cutting-edge technologies. We
+              prioritize customization to meet specific needs, uphold
+              environmental stewardship, boast a seasoned team with a proven
+              track record, and maintain a client-centric focus. Choosing
+              EcoSolution means opting for innovative, tailored, and
+              environmentally conscious energy solutions.
             </div>
           )}
         </li>
@@ -84,13 +84,12 @@ const Faq = () => {
           </h3>
           {activeItem === 3 && (
             <div className={css.text}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum earum molestiae commodi officiis error, sunt deserunt
-              voluptas provident enim repellendus voluptates deleniti eveniet
-              hic. Eaque praesentium veniam quibusdam a, voluptatibus corrupti
-              quos quasi repudiandae ex veritatis aperiam alias impedit,
-              doloribus quo mollitia? Laboriosam beatae et architecto quaerat
-              animi molestias ea.
+              Businesses and communities gain sustainable advantages by
+              integrating EcoSolution&apos;s renewable energy solutions. Our
+              tailored approach ensures cost-effective, eco-friendly energy
+              solutions, fostering environmental responsibility, reducing
+              long-term operational costs, and promoting energy independence for
+              a resilient future.
             </div>
           )}
         </li>
@@ -110,13 +109,12 @@ const Faq = () => {
           </h3>
           {activeItem === 4 && (
             <div className={css.text}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              unde quae, dolore dolor voluptatum qui eveniet. Dicta maiores,
-              debitis non, delectus, voluptatum dolores accusamus magnam quasi
-              iste numquam molestiae blanditiis deleniti? Veniam tempora optio
-              accusamus possimus? Quaerat nemo culpa ratione maiores id
-              accusamus praesentium, aliquid provident eveniet modi repudiandae
-              eum?
+              EcoSolution prioritizes environmental sustainability by employing
+              eco-friendly materials in product manufacturing, minimizing carbon
+              footprint in production processes, and ensuring energy-efficient
+              designs. We are committed to responsible sourcing, recycling
+              initiatives, and continuous improvement in green practices to
+              mitigate environmental impact.
             </div>
           )}
         </li>
@@ -136,20 +134,19 @@ const Faq = () => {
           </h3>
           {activeItem === 5 && (
             <div className={css.text}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              dolores distinctio assumenda odio totam culpa velit molestias,
-              quibusdam enim ut illum! Libero adipisci asperiores debitis
-              repellendus tenetur voluptatem laudantium, quaerat facilis
-              laboriosam quis. Veniam distinctio nobis suscipit esse, accusamus
-              eos officia eveniet tempore quos voluptates aut quam animi qui
-              laudantium.
+              EcoSolution fosters community engagement by collaborating with
+              local stakeholders, providing education on renewable energy
+              benefits, and offering job opportunities. Our commitment to a just
+              transition involves prioritizing social equity, supporting local
+              economies, and ensuring that the shift to renewable energy is
+              inclusive and beneficial for all.
             </div>
           )}
         </li>
       </ul>
       <div className={css.container}>
         <p className={css.bottom_text}>
-          Didn&apos;t find the answer to your question?{" "}
+          Didn&apos;t find the answer to your question?
         </p>
         <a href="#contacts" onClick={HandleBlur} className={css.button}>
           <p className={css.text_btn}>Contact Us</p>
